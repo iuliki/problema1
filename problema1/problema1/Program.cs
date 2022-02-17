@@ -26,7 +26,7 @@ namespace problema1
 
             int s = 0;
 
-            Console.WriteLine( sum(array, n,s));
+            Console.WriteLine( sum(array,n-1,s));
 
             
 
@@ -39,8 +39,8 @@ namespace problema1
                 return vector[n];
             else
             {
-                
-                return s + sum(vector, n - 1, s+vector[n]);
+              
+                return  vector[n]+ sum(vector, n - 1, vector[n]);
 
             }
 
